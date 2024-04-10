@@ -1,0 +1,4 @@
+file:Features/LoanTenureCalcPage.feature:4
+file:Features/LoanAmountCalc.feature:4
+file:Features/EMIcalcPage.feature:4
+file:Features/EMIPage.feature:4

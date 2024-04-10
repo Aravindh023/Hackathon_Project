@@ -35,6 +35,7 @@ public class EMIcalcPage extends BaseClass
 		//Waiting for all the fields to be visible
 		wait.waitForTheTextBoxAndSlider(getDriver());
 		//Validating if Loan Amount Text Box is visible
+		
 		if(LoanCalculatorPageObj.getLoanAmtTextBox().isDisplayed()) {
 			myAssert.pass();
 		}
@@ -87,12 +88,12 @@ public class EMIcalcPage extends BaseClass
 		//Moving the Slider to Initial Position
 		LoanCalculatorPageObj.moveLoanAmtSlider(0);
 		
-		/*//Validating if the value passed to the text box is same as it is showing in the slider
-		myAssert.assertIt(LoanCalculatorPageObj.getLoanAmtTextBoxValue(), "10,00,000", "The initial value of the loan amount textbox is not 10,00,000");*/
+		//Validating if the value passed to the text box is same as it is showing in the slider
+		//myAssert.assertIt(LoanCalculatorPageObj.getLoanAmtTextBoxValue(), "10,00,000", "The initial value of the loan amount textbox is not 10,00,000");
 		
 		//Moving the slider to Desired Position
 		LoanCalculatorPageObj.moveLoanAmtSlider(130);
-		
+		System.out.println(LoanCalculatorPageObj.getLoanAmtTextBoxValue());
 		//Validating if the value passed to the text box is same as it is showing in the slider
 		if(LoanCalculatorPageObj.getLoanAmtTextBoxValue().equals("50,00,000")) {
 			myAssert.pass();
@@ -160,12 +161,12 @@ public class EMIcalcPage extends BaseClass
 		//Moving the Slider to Initial Position
 		LoanCalculatorPageObj.moveIntRateSlider(0);
 		
-		/*//Validating if the value passed to the text box is same as it is showing in the slider
-		myAssert.assertIt(LoanCalculatorPageObj.getIntRateTextBoxValue(), "10.75", "The initial value of the interest rate textbox is not 10.75");*/
+		//Validating if the value passed to the text box is same as it is showing in the slider
+		//myAssert.assertIt(LoanCalculatorPageObj.getIntRateTextBoxValue(), "10.75", "The initial value of the interest rate textbox is not 10.75");
 		
 		//Moving the slider to Desired Position
 		LoanCalculatorPageObj.moveIntRateSlider(112);
-		
+		System.out.println(LoanCalculatorPageObj.getIntRateTextBoxValue());
 		//Validating if the value passed to the text box is same as it is showing in the slider
 		if(LoanCalculatorPageObj.getIntRateTextBoxValue().equals("14.25")) {
 			myAssert.pass();

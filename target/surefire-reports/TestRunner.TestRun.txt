@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner.TestRun
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.05 s -- in TestRunner.TestRun
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 61.33 s <<< FAILURE! -- in TestRunner.TestRun
+UI checks in EMI calculator page.EMIcalculator UI Validation -- Time elapsed: 7.672 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at Utilities.Assertions.fail(Assertions.java:14)
+	at StepDefenitions.EMIcalcPage.the_scale_change_done_by_user_reflects_correctly_in_loan_amount_textbox(EMIcalcPage.java:104)
+	at ✽.the scale change done by user reflects correctly in LoanAmount Textbox(file:///C:/Users/2318474/eclipse-workspace/Hackathon_Project/./Features/EMIcalcPage.feature:7)
+
+Loan Amount Calculator UI Check.Loan Amount Calculator UI Check -- Time elapsed: 7.782 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at Utilities.Assertions.fail(Assertions.java:14)
+	at StepDefenitions.LoanAmountCalcPage.user_validates_scale_change_for_interest_rate_textbox_and_slider(LoanAmountCalcPage.java:137)
+	at ✽.user validates scale change for interest rate textbox and slider(file:///C:/Users/2318474/eclipse-workspace/Hackathon_Project/./Features/LoanAmountCalc.feature:8)
+
+Loan Tenure Calculator UI Check.Loan Tenure Calculator UI Check -- Time elapsed: 7.712 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at Utilities.Assertions.fail(Assertions.java:14)
+	at StepDefenitions.LoanTenureCalcPage.user_validate_scale_change_for_loan_amount_textbox_and_slider(LoanTenureCalcPage.java:103)
+	at ✽.user validate scale change for loan amount textbox and slider(file:///C:/Users/2318474/eclipse-workspace/Hackathon_Project/./Features/LoanTenureCalcPage.feature:7)
+
